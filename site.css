@@ -1,0 +1,19 @@
+/* video をポスター画像と同じ表示サイズにする */
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
